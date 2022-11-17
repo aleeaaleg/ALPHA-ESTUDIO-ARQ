@@ -1,0 +1,73 @@
+body{
+    animation-name: ingreso-superior;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+
+.header-nosotros{
+    animation-name: ingreso-superior;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+
+
+    div{
+        border: 16px;
+        padding: 8px;
+        background-color: $color-fondo;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h1{
+            padding: 16px;
+            font-size: 48px;
+        }
+
+        h3{
+            transition-duration: 0.5s;
+            color: black;
+
+        }
+        h3:hover{
+        transform: scale(1.2);
+
+        }
+    }
+}
+
+@keyframes ingreso-superior{
+
+        0%{
+            transform: translateY(-400px);
+            
+        }
+    
+        100%{
+            transform: translatey(0);
+        }
+    
+}
+.main-about{
+
+    div{
+        padding: 6px;
+
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+
+        img{
+            width: 400px;
+            left: 600px;
+        }
+    }
+}
+@media screen and (max-width:768px){
+    .main-about{
+
+        div{
+            flex-direction: column;
+        }
+    }
+}

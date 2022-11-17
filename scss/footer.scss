@@ -1,0 +1,46 @@
+footer{
+    border: 16px;
+    padding: 16px;
+    background-color: $color-fondo;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    img{
+        width: 100px;
+        left: 100px;
+    }
+
+    div{
+        
+        align-content: flex-start;
+
+        ul{
+            list-style-type: none;
+            display: inline-block;
+        
+        }
+    }
+
+ @media screen and (max-width:768px){
+        footer{
+            display: grid;
+            grid-template-columns: 1fr;
+            justify-content: right;
+            
+            div{
+                align-items: center;
+            }
+
+            ul{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        
+        
+
+    }
+
+}
